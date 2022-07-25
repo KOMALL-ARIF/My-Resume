@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1 class="heading">Percentage Calculator</h1>
+    
+    <div class="container">
+            <form onsubmit="calculate(); return false;">
+
+                <div class="formstyle">
+                    <label for="physics">Marks obtained in Physics</label>
+                    <input type="number" min="0" max="100" required id="physics" placeholder="Marks obtained in physics">
+                    
+                </div>
+                <div class="formstyle">
+                    <label for="chemistry">Marks obtained in Chemistry</label>
+                    <input type="number" min="0" max="100" required id="chemistry"
+                        placeholder="Marks obtained in Chemistry">
+                    
+                </div>
+                <div class="formstyle">
+                <label for="mathematics">Marks obtained in Mathematics</label>
+                <input type="number" min="0" max="100" required id="mathematics"
+                    placeholder="Marks obtained in Mathematics">
+                
+                </div>
+                <div class="formstyle">
+                <label for="urdu">Marks obtained in urdu</label>
+                <input type="number" min="0" max="100" required id="urdu" 
+                    placeholder="Marks obtained in urdu">
+                
+                </div>
+                <div class="formstyle">
+                <label for="english">Marks obtained in English</label>
+                <input type="number" min="0" max="100" required id="english" 
+                    placeholder="Marks obtained in English">
+                
+                </div>
+                <div class="formstyle">
+                <label for="ist">Marks obtained in Islamic Studies</label>
+                <input type="number" min="0" max="50" required id="ist" 
+                    placeholder="Marks obtained in islamic Studies">
+                
+                </div>
+
+                <button type="submit">Calculate</button>
+
+            </form>
+ <script>
+     function calculate() {
+         let physics = parseFloat(document.querySelector("#physics").value);
+     }
+ </script>
+</body>
+</html>
